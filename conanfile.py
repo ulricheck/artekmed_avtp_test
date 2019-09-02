@@ -21,7 +21,8 @@ class ArtekmedP02Conan(ConanFile):
         "magnum/2019.01@camposs/stable",
         "corrade/2019.01@camposs/stable",
         "opencv/3.4.3@camposs/stable",
-        "nvenc_rtsp/0.1@artekmed/stable",
+        "nvpipe/0.2@camposs/stable",
+        "libavtp/0.1@camposs/stable",
         "kinect-azure-sensor-sdk/1.2.0@camposs/stable",
         )
 

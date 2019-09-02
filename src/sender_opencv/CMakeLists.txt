@@ -17,7 +17,7 @@ target_link_libraries(opencv_stream_sender PRIVATE
         CONAN_PKG::magnum
         CONAN_PKG::corrade
         CONAN_PKG::opencv
-        CONAN_PKG::nvenc_rtsp
+        CONAN_PKG::libavtp
 )
 target_include_directories(opencv_stream_sender
         PRIVATE ${CUDA_INCLUDE_DIRS}

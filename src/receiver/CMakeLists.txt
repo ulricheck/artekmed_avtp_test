@@ -10,7 +10,7 @@ target_link_libraries(k4a_stream_receiver PRIVATE
         CONAN_PKG::magnum
         CONAN_PKG::corrade
         CONAN_PKG::opencv
-        CONAN_PKG::nvenc_rtsp
+        CONAN_PKG::libavtp
 )
 target_include_directories(k4a_stream_receiver
         PRIVATE ${CUDA_INCLUDE_DIRS}
