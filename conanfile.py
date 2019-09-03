@@ -46,12 +46,9 @@ class ArtekmedP02Conan(ConanFile):
     exports_sources = "modules/*", "src/*", "CMakeLists.txt"
 
     def configure(self):
-        if self.settings.os == "Linux":
-            self.options["opencv"].with_gtk = True
-            self.options['magnum'].with_windowlessglxapplication = True
-
-        if self.settings.os == "Windows":
-            self.options['magnum'].with_windowlesswglapplication = True
+        self.options["opencv"].with_gtk = True
+        self.options["opencv"].shared = True
+        self.options['magnum'].with_windowlessglxapplication = True
 
     def imports(self):
         self.copy(src="bin", pattern="*.dll", dst="./bin") # Copies all dll files from packages bin folder to my "bin" folder
